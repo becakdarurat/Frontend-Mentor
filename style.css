@@ -1,7 +1,70 @@
+/* Font Google Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Add styles here */
 * {
     margin: 0;
     padding: 0;
-    font-size: 62.5%;
+    font-size: 62.5%/18px Arial, sans-serif;
     box-sizing: border-box;
+}
+body {
+    background-color: #f0f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+/* main */
+main.main {
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+}
+main.main .rectagle {
+    position: relative;
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-top-right-radius: 10%;
+    padding:100px 250px;
+}
+main.main .rectagle h2 {
+    font-size: 3rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: #3E54A3;
+}
+main.main .rectagle p {
+    font-size: 1rem;
+    margin-top: 15px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+}
+main.main .rectagle p strong {
+    text-decoration: underline;
+}
+main.main .rectagle .hero {
+    transform: translateY(50px);
+}
+main.main .rectagle .hero,
+main.main .rectagle .hero img {
+    width: 100%;
+    height: 100%;
+}
+.favicon {
+    position: absolute;
+    top: -60px;
+    left: 50px;
+}
+.favicon img {
+    width: 144px;
+    height: 144px;
+}
+main.main .frame {
+    flex: 1;
+    border: 1px solid black;
 }
